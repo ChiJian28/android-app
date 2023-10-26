@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177019039442",
+    "project_id": "gramativ-58791",
+    "storage_bucket": "gramativ-58791.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177019039442:android:754402e4819b170de3470b",
+        "android_client_info": {
+          "package_name": "com.example.gramativ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177019039442-7s2kpfu9hc0n3jjcek1h5e487l5qih1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgYfJ40_8LvzBT11BqGIFMc7hsNn2qKTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177019039442-7s2kpfu9hc0n3jjcek1h5e487l5qih1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnWeight="1"
+    android:background="@drawable/background_home"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="false"
+            android:animateLayoutChanges="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#741F113C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgGramativLogo"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_full" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="266dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="10dp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgGramativLogo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_logout_24"
+                    app:tint="#A481FF" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout">
+
+                <TextView
+                    android:id="@+id/txtMainScoreTitle"
+                    android:layout_width="145dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginEnd="1dp"
+                    android:fontFamily="@font/concert_one"
+                    android:text="Score"
+                    android:textAlignment="center"
+                    android:textColor="#FFBF00"
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imgProfilePic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtMainExpTitle"
+                    android:layout_width="145dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="@font/concert_one"
+                    android:text="EXP"
+                    android:textAlignment="center"
+                    android:textColor="#B507FF28"
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgProfilePic"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtMainExp"
+                    android:layout_width="146dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="1dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#FFBEF6"
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgProfilePic"
+                    app:layout_constraintTop_toBottomOf="@+id/txtMainExpTitle" />
+
+                <TextView
+                    android:id="@+id/txtMainScore"
+                    android:layout_width="146dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="18dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#FFBEF6"
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imgProfilePic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtMainScoreTitle" />
+
+                <ImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="57dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txtMainExpTitle"
+                    app:layout_constraintStart_toEndOf="@+id/txtMainScore"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/profile_pic" />
+
+                <TextView
+                    android:id="@+id/txtMainUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="169dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="169dp"
+                    android:fontFamily="@font/concert_one"
+                    android:gravity="center"
+                    android:text="GUEST"
+                    android:textAlignment="center"
+                    android:textColor="#FFD6C4FF"
+                    android:textSize="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgProfilePic" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtMainDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/concert_one"
+                android:gravity="center"
+                android:text="Dashboard"
+                android:textAlignment="center"
+                android:textColor="#FF57A5"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayoutMainDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#BE1F113C"
+                android:paddingLeft="20dp"
+                android:paddingTop="100dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="100dp"
+                app:columnCount="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMainDashboard"
+                app:rowCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMainQuizzes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#66490C8E"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgMainQuizzes"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/baseline_quiz_24"
+                            android:backgroundTint="#A079F8" />
+
+                        <TextView
+                            android:id="@+id/txtMainQuizzes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Quizzes"
+                            android:textAlignment="center"
+                            android:textColor="#D2C1FA"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMainProjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#66490C8E"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgMainProjects"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/project"
+                            android:backgroundTint="#A079F8" />
+
+                        <TextView
+                            android:id="@+id/txtMainProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Projects"
+                            android:textAlignment="center"
+                            android:textColor="#D2C1FA"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMainTutors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#66490C8E"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgMainTutors"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/baseline_school_24"
+                            android:backgroundTint="#A079F8" />
+
+                        <TextView
+                            android:id="@+id/txtMainTutors"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Tutors"
+                            android:textAlignment="center"
+                            android:textColor="#D2C1FA"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMainGoals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#66490C8E"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgMainGoals"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/goals"
+                            android:backgroundTint="#A079F8" />
+
+                        <TextView
+                            android:id="@+id/txtMainGoals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Goals"
+                            android:textAlignment="center"
+                            android:textColor="#D2C1FA"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/gridLayoutMainDashboard">
+
+                <ImageView
+                    android:id="@+id/imgGoalsClaim"
+                    android:layout_width="39dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="390dp"
+                    android:background="#00380E60"
+                    android:rotation="30"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_card_giftcard_24"
+                    app:tint="#EB4F9C" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
