@@ -1,2 +1,2 @@
 # playgames
-An app to practice your it knowledge
+The first android app built in Kotlin 
